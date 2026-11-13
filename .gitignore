@@ -5,9 +5,6 @@
 data/*.csv
 *.csv
 
-# Exportaciones de Qlik generadas localmente (excepto screenshots que sí queremos versionar)
-!screenshots/
-
 # Exportaciones de Qlik generadas localmente
 qlik_data/
 
