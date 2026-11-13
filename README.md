@@ -21,7 +21,7 @@ Proyecto que simula el trabajo de un analista de datos en una empresa financiera
 | **Kaggle** (Home Credit dataset) | Fuente de datos |
 | **Supabase (PostgreSQL)** | Base de datos en la nube, ETL y transformaciones |
 | **Python** (pandas, SQLAlchemy, dotenv) | Scripts de carga y análisis |
-| **SQL** | 14 queries en 5 bloques temáticos |
+| **SQL** | Queries de modelado y análisis en 5 bloques temáticos |
 | **Qlik Sense Cloud** | Dashboard de 4 páginas con Set Analysis |
 
 ---
@@ -76,7 +76,7 @@ Colocar los 7 archivos CSV en la carpeta `data/` y actualizar `DATA_PATH` en `.e
 ```bash
 python src/01_cargar_datos.py     # Carga datos raw a Supabase
 python src/02_modelado.py         # Crea el Star Schema
-python src/03_analisis_segmentacion.py  # Ejecuta los 14 queries de análisis
+python src/03_analisis_segmentacion.py  # Ejecuta las 8 queries de análisis (bloques 3, 4 y 5)
 python src/04_exportar_qlik.py    # Exporta tablas mart a CSV
 python src/05_verificar.py        # Verifica todo
 ```
@@ -214,7 +214,7 @@ Sum(monto_pagado) / Sum(monto_cuota) * 100
 ## Recomendaciones del Analista
 
 1. **Segmentar la gestión por edad y educación** — priorizar 20-30 años con educación secundaria incompleta (mayor concentración de riesgo)
-2. **Alertas tempranas a los 30 DPD** — el 24.5% ya supera 60 días; actuar al primer tramo previene deterioro
+2. **Alertas tempranas a los 30 DPD** — solo el 0.09% de la cartera supera los 60 días, pero el 1.45% ya está en el tramo 1-30; actuar en el primer tramo previene que escale
 3. **Revisar política para desempleados** — tasa de default del ~33% justifica requisitos adicionales
 4. **Modelo predictivo de scoring** — las variables disponibles (edad, educación, tipo ingreso, buró) son suficientes para Random Forest / XGBoost
 5. **Revisar saldos negativos** — el campo `saldo_pendiente` presenta valores negativos que indican pagos en exceso o error en ETL
