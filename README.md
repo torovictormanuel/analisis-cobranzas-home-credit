@@ -51,6 +51,28 @@ analisis-cobranzas-home-credit/
 
 ---
 
+## Screenshots del Dashboard
+
+### Modelo de Datos en Qlik Sense (Star Schema)
+![Modelo de datos](screenshots/01_modelo_datos_qlik.png)
+
+### Página 1 — Resumen Ejecutivo
+![Resumen Ejecutivo](screenshots/02_p1_resumen_ejecutivo.png)
+
+### Página 2 — Análisis de Aging
+![Análisis de Aging](screenshots/03_p2_analisis_aging.png)
+
+### Página 3 — Segmentación de Riesgo
+![Segmentación de Riesgo](screenshots/04_p3_segmentacion_riesgo.png)
+
+### Página 4 — Comportamiento de Pago
+![Comportamiento de Pago](screenshots/05_p4_comportamiento_pago.png)
+
+### Medidas Qlik (Set Analysis)
+![Medidas Set Analysis](screenshots/06_medidas_qlik_set_analysis.png)
+
+---
+
 ## Instrucciones de Uso
 
 ### 1. Requisitos previos
